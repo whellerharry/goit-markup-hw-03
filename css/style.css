@@ -30,6 +30,7 @@ body {
 /* reset basic styles  */
 .list {
   list-style: none;
+  padding-left: 0;
 }
 
 .link {
@@ -37,7 +38,6 @@ body {
   color: var(--primary-text-color);
 }
 
-/* Header section */
 /* logo */
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -53,6 +53,11 @@ body {
 }
 
 /* site-nav */
+.site-nav.list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .site-nav .link {
   font-weight: var(--sub-title-font-weight);
   font-size: 14px;
@@ -69,6 +74,11 @@ body {
 }
 
 /* site-auth list*/
+.site-auth.list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .site-auth .link {
   font-weight: var(--sub-title-font-weight);
   letter-spacing: 0.02em;
@@ -80,12 +90,32 @@ body {
   color: var(--accent-color);
 }
 
+/* header container */
+.container {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+  outline: 2px solid tomato;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* all sections */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: 2px solid teal;
+}
 /* hero section*/
 .hero {
   background-color: var(--secondary-bg-color);
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -110,32 +140,52 @@ body {
   cursor: pointer;
 }
 
-/* advantages section */
+/* Преимущества advantages section */
+.section-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .advantages-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: 14px;
   font-weight: var(--title-font-weight);
   text-transform: uppercase;
 }
 
 .advantages-text {
+  margin-top: 0;
+  margin-bottom: 0;
   line-height: 1.7;
   color: var(--secondary-text-color);
 }
 
-/* section */
+/* section Чем мы занимаемся */
+.list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .section-title {
   font-weight: var(--title-font-weight);
   font-size: 36px;
 }
 
-/* team section */
+/* Наша команда team section */
+.section.team {
+  background-color: #f5f4fa;
+}
 .team-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: var(--sub-title-font-weight);
   font-size: var(--secondary-font-size);
   line-height: 1.18;
 }
 
 .team-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: var(--secondary-font-size);
   line-height: 1.18;
   color: var(--secondary-text-color);
